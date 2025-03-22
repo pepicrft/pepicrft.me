@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: https://github.com/jdx/mise-action@v2
+      - uses: jdx/mise-action@v2
         with:
           cache: true
       - run: mise run deploy

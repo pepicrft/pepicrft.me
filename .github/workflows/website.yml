@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-mix-
       - run: git config --global user.email "website@pepicrft.me"
       - run: git config --global user.name "website"
-      - uses: https://github.com/jdx/mise-action@v2
+      - uses: jdx/mise-action@v2
         with:
           cache: true
       - run: mise run install
@@ -46,7 +46,7 @@ jobs:
       - run: git config --global user.email "website@pepicrft.me"
       - run: git config --global user.name "website"
       - run: curl https://mise.run | sh
-      - uses: https://github.com/jdx/mise-action@v2
+      - uses: jdx/mise-action@v2
         with:
           cache: true
       - run: mise run install
@@ -67,7 +67,7 @@ jobs:
       - run: git config --global user.email "website@pepicrft.me"
       - run: git config --global user.name "website"
       - run: curl https://mise.run | sh
-      - uses: https://github.com/jdx/mise-action@v2
+      - uses: jdx/mise-action@v2
         with:
           cache: true
       - run: mix deps.get
