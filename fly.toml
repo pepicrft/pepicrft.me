@@ -1,8 +1,3 @@
-# fly.toml app configuration file generated for pepicrftme on 2024-11-24T16:46:17+01:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
 app = "pepicrftme"
 primary_region = "mad"
 kill_signal = "SIGTERM"
@@ -14,7 +9,7 @@ swap_size_mb = 512
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "pepicrftme.fly.dev"
+  PHX_HOST = "pepicrft.me"
   PORT = "8080"
 
 [http_service]
