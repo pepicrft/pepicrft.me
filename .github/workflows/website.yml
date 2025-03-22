@@ -9,6 +9,12 @@ concurrency:
   group: pepicrftme-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  MISE_EXPERIMENTAL: "1"
+  MISE_SOPS_AGE_KEY: ${{ secrets.MISE_SOPS_AGE_KEY }}
+  MISE_GITHUB_TOKEN: ${{ secrets.PEPICRFT_GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.PEPICRFT_GITHUB_TOKEN }}
+
 jobs:
   lint:
     name: Lint
