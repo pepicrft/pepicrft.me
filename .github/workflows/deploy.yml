@@ -4,14 +4,19 @@ on:
     branches:
       - main
 
+env:
+  MISE_EXPERIMENTAL: "1"
+  MISE_SOPS_AGE_KEY: ${{ secrets.MISE_SOPS_AGE_KEY }}
+  MISE_GITHUB_TOKEN: ${{ secrets.PEPICRFT_GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.PEPICRFT_GITHUB_TOKEN }}
+
 jobs:
   build:
     name: Fly
-    runs-on: docker
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: curl https://mise.run | sh
-      - run: curl -L https://fly.io/install.sh | sh
-      - run: /root/.fly/bin/flyctl deploy --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - uses: https://github.com/jdx/mise-action@v2
+        with:
+          cache: true
+      - run: mise run deploy

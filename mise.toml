@@ -3,7 +3,14 @@ elixir = "1.17.3"
 erlang = "27.1.2"
 pandoc = "3.3"
 vale = "3.9.3"
+flyctl = "0.3.91"
 
 [alias]
 pandoc = "asdf:https://github.com/Fbrisset/asdf-pandoc"
 vale = "asdf:https://github.com/pdemagny/asdf-vale"
+
+[env]
+_.file = ".env.json"
+
+[settings.sops]
+age_key_file = "~/.config/mise/age-pepicrft.txt"
