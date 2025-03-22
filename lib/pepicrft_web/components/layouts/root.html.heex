@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <link phx-track-static rel="stylesheet" href="/styles/app.css" />
+    <script defer phx-track-static type="text/javascript" src="/assets/app.js">
+    </script>
+    <!-- Meta -->
+    <.meta conn={@conn} />
+    <!-- Feed -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:title)}
+      href={feed_url()}
+    />
+    <!-- Atom -->
+    <link href={~p"/blog/feed.xml"} type="application/atom+xml" rel="alternate" title="Atom feed" />
+    <!-- Prism -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"
+    >
+    </script>
+  </head>
+
+  <body class="pp-Body">
+    <nav class="pp-Navigation">
+      <ul class="pp-Navigation_List">
+        <a class="pp-Navigation_List_Title" href={~p"/"}>Pedro Piñera</a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/about"}>About</a>
+        <div class="pp-Navigation_List_Arrow">
+          <%= raw(if @request_path == ~p"/about", do: "⇢", else: "&nbsp;") %>
+        </div>
+        <a class="pp-Navigation_List_Link" href={~p"/projects"}>Projects</a>
+        <div class="pp-Navigation_List_Arrow">
+          <%= raw(if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;") %>
+        </div>
+        <a class="pp-Navigation_List_Link" href={~p"/feed"}>Feed</a>
+        <div class="pp-Navigation_List_Arrow">
+          <%= raw(if @request_path == ~p"/feed", do: "⇢", else: "&nbsp;") %>
+        </div>
+        <a class="pp-Navigation_List_Link" href={~p"/photos"}>Photos</a>
+        <div class="pp-Navigation_List_Arrow">
+          <%= raw(if @request_path == ~p"/photos", do: "⇢", else: "&nbsp;") %>
+        </div>
+        <a class="pp-Navigation_List_Link" href={~p"/now"}>Now</a>
+        <div class="pp-Navigation_List_Arrow">
+          <%= raw(if @request_path == ~p"/now", do: "⇢", else: "&nbsp;") %>
+        </div>
+        <a class="pp-Navigation_List_Link" href={~p"/blog/feed.xml"}>RSS</a>
+        <div>&nbsp;</div>
+        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+      </ul>
+
+      <ul class="pp-Navigation_List">
+        <a class="pp-Navigation_List_Title" href={~p"/"}>On the Internet</a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+        <a class="pp-Navigation_List_Link" href="https://mastodon.social/@pepicrft">Mastodon</a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+        <a class="pp-Navigation_List_Link" href="https://github.com/pepicrft">GitHub</a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+        <a
+          class="pp-Navigation_List_Link"
+          href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/"
+        >
+          LinkedIn
+        </a>
+        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>        <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
+      </ul>
+    </nav>
+
+    <main class="pp-Main">
+      <%= @inner_content %>
+    </main>
+  </body>
+</html>

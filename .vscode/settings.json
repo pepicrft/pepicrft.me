@@ -1,0 +1,55 @@
+{
+  "files.associations": {
+    "*.heex": "phoenix-heex",
+  },
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[phoenix-heex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/*.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2022-12-28-gestalt-gestalt-development.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2022-12-31-2023.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-01-02-gestalt-md.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-01-04-benchmarking-node-module-loading.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-01-13-shopify-cli-on-hn.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-02-09-random-notes.md"
+    }
+  ]
+}

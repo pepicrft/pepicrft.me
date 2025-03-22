@@ -1,0 +1,70 @@
+name: Website
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-mix-
+      - run: git config --global user.email "website@pepicrft.me"
+      - run: git config --global user.name "website"
+      - uses: https://github.com/jdx/mise-action@v2
+        with:
+          cache: true
+      - run: mise run install
+      - run: mise run lint:spell
+  build:
+    name: Build
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-mix-
+      - run: git config --global user.email "website@pepicrft.me"
+      - run: git config --global user.name "website"
+      - run: curl https://mise.run | sh
+      - uses: https://github.com/jdx/mise-action@v2
+        with:
+          cache: true
+      - run: mise run install
+      - run: mise run build
+  test:
+    name: Test
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: ${{ runner.os }}-mix-test-${{ hashFiles('**/mix.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-mix-test
+      - run: git config --global user.email "website@pepicrft.me"
+      - run: git config --global user.name "website"
+      - run: curl https://mise.run | sh
+      - uses: https://github.com/jdx/mise-action@v2
+        with:
+          cache: true
+      - run: mix deps.get
+      - run: mix test
