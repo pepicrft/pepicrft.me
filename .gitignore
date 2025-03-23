@@ -46,4 +46,4 @@ priv/static/images/og/*
 .tmp/
 db/
 
-Styles/
+./Styles/
