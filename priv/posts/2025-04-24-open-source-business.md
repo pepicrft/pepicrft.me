@@ -46,7 +46,7 @@ In other cases, value lies not in the software but in the infrastructure. Take S
 
 Some opt for licenses outside OSI’s definition. [Sentry](https://sentry.io/), for example, proposed the Fair license, which restricts competition to protect against free-riders. While complex hosting might deter individual users, it’s trivial for giants like [AWS](https://aws.amazon.com/) or [Google Cloud](https://cloud.google.com/gcp), who could outscale you. We nearly faced this with Bitrise offering caching for Tuist as a service. The downside? Non-OSI licenses—or projects requiring a [Contributor License Agreement (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement)—may deter developer contributions, as they feel less “open.”
 
-One intriguing model is [Penpot](https://penpot.app/)’s Open Nitrate Model, which embraces “charging the controller.” Instead of gating advanced features, they believe everyone should access them, and you only pay for a certain level of control. It’s called the Open Nitrate Model because a feature becomes paid if you can answer “No” to these three questions (forming a “No3” element):
+One intriguing model is [Penpot](https://penpot.app/)’s Open Nitrate Model, which embraces “charging the controller.” Instead of gating advanced features, they believe everyone should access them, and you only pay for a certain level of control. It’s called the Open Nitrate Model because a feature becomes paid if you can answer “No” to these three questions (forming a “NO3” element):
 
 1. Will this capability limit new users from discovering and using Glossia?
 2. Will this capability particularly benefit advanced users?
