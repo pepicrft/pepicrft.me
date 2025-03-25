@@ -29,7 +29,7 @@ GitHub isn’t alone in this trend—[GitLab](https://docs.gitlab.com/runner/) a
 
 Another recent change is in virtualization. [Tart](https://github.com/cirruslabs/tart) brought Docker-like concepts to Apple’s Virtualization Framework, but now it faces competition from permissively licensed alternatives like [Lume](https://github.com/trycua/cua) and [Curie](https://github.com/macvmio/curie). Virtualization is getting cheaper. While Tart may still lead in capabilities, open-source projects have a knack for catching up quickly due to community contributions. I believe it’s only a matter of time before they’re on par.
 
-## What’s Keeping People with CI Providers?
+## What’s keeping people with CI providers?
 
 I ask myself this question daily, and I think the answer is straightforward: vendor lock-in. By design, users are tied to platforms they chose years ago through proprietary YAML formats that are costly to migrate and ecosystems of steps that tightly couple their automation to the service.
 
