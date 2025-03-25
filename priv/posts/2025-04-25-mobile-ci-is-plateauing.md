@@ -6,7 +6,7 @@ tags: ["OSS", "Business", "CI"]
 
 We are considering solving some problems at [Tuist](https://tuist.dev) that require virtualizing macOS environments. As part of this, I’ve invested some mental energy into understanding the finances and technology stack of the mobile CI landscape. What I’ve discovered is that the landscape is plateauing, CI companies are responding to this shift, and we might be on the verge of either a devaluation of CI companies or a revolution. To better understand the situation, let’s dive into the stack:
 
-## The Stack
+## The stack
 
 Technologies can be broken down into layers, and CI is no exception. Starting from the bottom:
 
