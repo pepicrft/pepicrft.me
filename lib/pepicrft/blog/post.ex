@@ -26,7 +26,8 @@ defmodule Pepicrft.Blog.Post do
     :tags,
     :body,
     :og_image_slug,
-    :og_image_path
+    :og_image_path,
+    :redirect_from
   ]
 
   @doc """
@@ -68,7 +69,8 @@ defmodule Pepicrft.Blog.Post do
       tags: tags,
       description: description,
       og_image_slug: og_image_slug,
-      og_image_path: og_image_path
+      og_image_path: og_image_path,
+      redirect_from: Map.get(frontmatter, "redirect_from")
     )
   end
 

@@ -2,6 +2,7 @@
 title: "Dogfood if you can"
 description: "If you can dogfood your product, do it. It's a great way to build a better product."
 tags: ["Product"]
+redirect_from: /blog/2025/04/12/dogfooding
 ---
 
 I've noticed that when using various products, I frequently encounter frustrating bugs that seem obvious - issues I would have fixed immediately had it been my own product. This is precisely why I'm drawn to open source software: the ability to directly implement fixes and submit pull requests to repositories.

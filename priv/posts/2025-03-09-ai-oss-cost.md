@@ -2,6 +2,7 @@
 title: "AI as a tool to reduce OSS maintenance costs"
 description: "How AI can help you maintain your open source project."
 tags: ["OSS"]
+redirect_from: /blog/2025/04/09/ai-oss-cost
 ---
 
 GitHub recently introduced GitHub Copilot as a reviewer tool for pull requests. I gave it a shot with low expectations and had a pleasant surprise. The reviews you get could easily be mistaken for those from a human reviewer.

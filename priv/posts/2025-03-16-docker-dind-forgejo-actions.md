@@ -2,6 +2,7 @@
 title: "Setting up Docker DinD in Forgejo Actions"
 description: "Learn how to use Docker from your Forgejo Actions pipeline."
 tags: ["Git"]
+redirect_from: /blog/2025/04/16/docker-dind-forgejo-actions
 ---
 
 I spent a fair amount of time today trying to get Docker DinD working in Forgejo Actions, so I thought I'd share the steps for my future self or anyone running into a similar need.

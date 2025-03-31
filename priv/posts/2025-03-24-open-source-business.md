@@ -2,6 +2,7 @@
 title: "If a business can be open source, it'll be open source"
 description: "In this blog post I share why open source businesses are the most thriving and long-lasting companies."
 tags: ["OSS", "Business"]
+redirect_from: /blog/2025/04/24/open-source-business
 ---
 
 If you’ve been following me for a while, you might already know that I’m a huge advocate of open source. My relationship with it has evolved as the project gained popularity, most recently becoming the foundation upon which we are building an open core company. In this post, I’d like to share what’s so special about it and why I believe it’s the foundation for building the most thriving and long-lasting companies. Let’s dive right in.

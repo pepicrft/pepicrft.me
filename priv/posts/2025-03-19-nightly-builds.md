@@ -2,6 +2,7 @@
 title: "Nightly builds are the wrong solution to the right problem"
 description: "In this blog post I share why today nightly builds are the wrong solution to the problem, and the alternative that we are proposing."
 tags: ["Previews"]
+redirect_from: /blog/2025/04/19/nightly-builds
 ---
 
 Nightly builds in app development are the wrong solution to the problem. We keep cargo-culting because:
