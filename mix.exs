@@ -70,7 +70,7 @@ defmodule Pepicrft.MixProject do
       {:file_system, "~> 0.2"},
       {:remote_ip, "~> 1.1"},
       {:req, "~> 0.5.0"},
-      {:ecto_sqlite3, "~> 0.16"}
+      {:ecto_sqlite3, "~> 0.19"}
     ]
   end
 
