@@ -1,6 +1,6 @@
 [tools]
 elixir = "1.18.3"
-erlang = "27.3.3"
+erlang = "27.3.4"
 pandoc = "3.3"
 vale = "3.9.3"
 flyctl = "0.3.91"
