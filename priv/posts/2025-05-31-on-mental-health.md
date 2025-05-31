@@ -4,7 +4,6 @@ description: "A candid reflection on recent mental health struggles"
 tags: ["Mental health"]
 ---
 
-# Mental Health
 
 I’ve been dealing with waves of anxiety lately. It had never happened to me before, but my body is speaking — it’s asking me to slow down. For someone like me, who’s naturally logical and tries to find a rational explanation for everything, this has been tricky. Anxiety lives in an emotional sphere I’m not familiar with, and I don’t yet have the tools to navigate it.
 
