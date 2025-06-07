@@ -41,17 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: |
-            deps
-            _build
-          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-mix-
       - run: git config --global user.email "website@pepicrft.me"
       - run: git config --global user.name "website"
-      - run: curl https://mise.run | sh
       - uses: jdx/mise-action@v2
         with:
           cache: true
@@ -62,17 +53,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v4
-        with:
-          path: |
-            deps
-            _build
-          key: ${{ runner.os }}-mix-test-${{ hashFiles('**/mix.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-mix-test
       - run: git config --global user.email "website@pepicrft.me"
       - run: git config --global user.name "website"
-      - run: curl https://mise.run | sh
       - uses: jdx/mise-action@v2
         with:
           cache: true
