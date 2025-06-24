@@ -12,7 +12,7 @@ I’ve been following Peter Steinberger’s work lately, and one thing has becom
 
 Claude Code reinforced this realization. They built an entire coding experience at a lower layer—the terminal—proving that the IDE’s value is diminishing rapidly.
 
-Apple’s top-down, hermetic approach is making them lag behind in crucial ways. They attempted to catch up with Xcode 16, but it’s already outdated. More importantly, they’ve completely disregarded the elephant in the room: MCPs. They’re doubling down on their proprietary model of “you need Xcode and our tools” to develop apps.
+Apple’s top-down, hermetic approach is making them lag behind in crucial ways. They attempted to catch up with Xcode 26, but it’s already outdated. More importantly, they’ve completely disregarded the elephant in the room: MCPs. They’re doubling down on their proprietary model of “you need Xcode and our tools” to develop apps.
 
 However, significant work is happening to break that dependency. As development shifts toward the terminal, new opportunities emerge to work outside of Xcode. This is where Tuist can play a transformative role.
 
