@@ -1,9 +1,12 @@
 [tools]
-elixir = "1.18.3"
+elixir = "1.18.4"
 erlang = "27.3.4"
 pandoc = "3.3"
 vale = "3.9.3"
 flyctl = "0.3.91"
+
+[hooks]
+postinstall = "mise run install"
 
 [alias]
 pandoc = "asdf:https://github.com/Fbrisset/asdf-pandoc"

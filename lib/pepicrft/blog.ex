@@ -1,12 +1,11 @@
 defmodule Pepicrft.Blog do
   alias Pepicrft.Blog.Post
-  alias Pepicrft.Markdown.Parser
 
   use NimblePublisher,
     build: Post,
     from: Application.app_dir(:pepicrft, "priv/posts/**/*.md"),
     as: :posts,
-    parser: Parser,
+    parser: Pepicrft.Markdown.Parser,
     highlighters: []
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})

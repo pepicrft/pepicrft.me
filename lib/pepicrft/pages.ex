@@ -4,13 +4,12 @@ defmodule Pepicrft.Pages do
   at compile them and provides functions for accessing them.
   """
   alias Pepicrft.Pages.Page
-  alias Pepicrft.Markdown.Parser
 
   use NimblePublisher,
     build: Page,
     from: Application.app_dir(:pepicrft, "priv/pages/**/*.md"),
     as: :pages,
-    parser: Parser,
+    parser: Pepicrft.Markdown.Parser,
     highlighters: []
 
   @doc """
