@@ -85,6 +85,8 @@ defmodule PepicrftWeb.CoreComponents do
         Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.to_string()
       }
     />
+    <!-- Fediverse -->
+    <meta name="fediverse:creator" content="@pedro@mastodon.pepicrft.me" />
     <!-- Favicon -->
     <link rel="shortcut icon" href={static_asset_url("/favicon.ico")} />
     <link
