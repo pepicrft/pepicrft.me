@@ -45,7 +45,7 @@ defmodule Pepicrft.MixProject do
       {:nimble_publisher,
        git: "https://github.com/dashbitco/nimble_publisher",
        ref: "a16dd5c3bd2153673648d8864c6c0c525e864096"},
-      {:phoenix, "~> 1.7.3", override: true},
+      {:phoenix, "~> 1.8.0", override: true},
       {:phoenix_ecto, "~> 4.6.0"},
       {:yaml_elixir, "~> 2.11.0"},
       {:ecto_sql, "~> 3.12"},
