@@ -37,10 +37,6 @@
         <div class="pp-Navigation_List_Arrow">
           <%= raw(if @request_path == ~p"/about", do: "⇢", else: "&nbsp;") %>
         </div>
-        <a class="pp-Navigation_List_Link" href={~p"/projects"}>Projects</a>
-        <div class="pp-Navigation_List_Arrow">
-          <%= raw(if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;") %>
-        </div>
         <a class="pp-Navigation_List_Link" href={~p"/feed"}>Feed</a>
         <div class="pp-Navigation_List_Arrow">
           <%= raw(if @request_path == ~p"/feed", do: "⇢", else: "&nbsp;") %>
@@ -57,7 +53,6 @@
         <div>&nbsp;</div>
         <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a>
         <div class="pp-Navigation_List_Arrow"><%= raw("&nbsp;") %></div>
-        <a class="pp-Navigation_List_Link" href="https://vault.pepicrft.me">Vault</a>
         <div>&nbsp;</div>
       </ul>
 

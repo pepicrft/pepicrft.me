@@ -9,10 +9,6 @@ defmodule PepicrftWeb.HomeController do
     render(conn, :about)
   end
 
-  def projects(conn, _params) do
-    render(conn, :projects)
-  end
-
   def feed(conn, _params) do
     %{body: statuses} =
       Req.get!("https://mastodon.pepicrft.me/api/v1/accounts/112887825210968145/statuses")

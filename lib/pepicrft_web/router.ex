@@ -23,7 +23,6 @@ defmodule PepicrftWeb.Router do
 
     get "/", HomeController, :index
     get "/about", HomeController, :about
-    get "/projects", HomeController, :projects
     get "/feed", HomeController, :feed
     get "/photos", HomeController, :photos
     get "/now", HomeController, :now
